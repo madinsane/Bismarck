@@ -4,7 +4,7 @@ module.exports = {
   entry: `${__dirname}/src/index.tsx`,
   output: {
     path: `${__dirname}/build`,
-    publicPath: '/Bismarck/build/',
+    publicPath: '/bismarck/build/',
     filename: 'bundle.js',
   },
 
@@ -45,7 +45,7 @@ module.exports = {
   // and test spa-github-pages redirect in dev
   devServer: {
     historyApiFallback: {
-      rewrites: [{ from: /\/Bismarck\/[^?]/, to: '/404.html' }],
+      rewrites: [{ from: /\/bismarck\/[^?]/, to: '/404.html' }],
     },
   },
 };
